@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat:wght@300&family=Roboto+Mono&family=Source+Code+Pro&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    display: flex;
+    background-color: white;
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+}
+hr {
+    margin: 20px 20px 20px 20px;
+}
+/* left container */
+#left-container {
+    width: 35vw;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    border-right: 1px solid black;
+}
+h1 {
+    text-align: center;
+}   
+#logo {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+.div-container {
+    display: flex;
+    justify-content: space-around;
+}
+/* Väder css */
+.weather {
+    display: flex;
+    align-content: center;
+    height: 100px;
+}
+.tempMin, .tempNow, .tempMax {
+    align-self:flex-start;
+    text-align: center;
+    padding: 5px;
+    border-radius: 4px;
+}
+.tempMin {
+    background-color: lightblue;
+}
+.tempNow {
+    align-self: flex-end; font-size: xx-large;
+    background-color: lightgreen;
+}
+.tempMax{
+    background-color: lightcoral;
+}
+
+/* Nyheter */
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+}
+
+article img, article p {
+    width: 80%;
+    overflow: hidden;
+}
+
+article img {
+    margin: 20px 0 20px 0;
+    max-height: 400px;
+}
+article h2:hover {
+    text-decoration: underline;
+}
+/* middle container */
+#middle-container {
+    background-color: rgb(157, 137, 171);
+    width: 65vw;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.calander {
+    height: 60px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.calander h1 {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+section {
+    padding: 20px;
+}
+section>h2 {
+    margin-bottom: 20px;
+}
+.infoDiv {
+    width: 65vw;
+    height: 20vh;
+    display: flex;
+    border-top: 1px solid white;
+}
+.foodInfo {
+    background-color: rgb(108, 94, 119);
+    padding: 20px;
+    transition: 1s;
+}
+.foodInfo:hover {
+    background-color: rgb(0, 0, 0);
+}
+.managerList {
+    background-color: rgb(130, 113, 142);
+    padding: 20px;
+    transition: 1s;
+}
+.managerList:hover {
+    background-color: rgb(0, 0, 0);
+}
+.foodInfo, .managerList {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.foodInfo:hover + .foodInfo a,
+.foodInfo:hover a {
+    display: block;
+}
+.managerList:hover + .managerList a,
+.managerList:hover a {
+    display: block;
+}
+.infoDiv div {
+    width: 50%;
+}
+.infoDiv h2 {
+    margin-bottom: 10px;
+}
+.infoDiv a {
+    display:none;
+    padding-bottom: 5px;
+    border-radius: 4px;
+    border-bottom: 1px solid red;
+    text-decoration: none;
+    color: white;
+    width:fit-content;
+}
+.infoDiv a:hover{
+    border-bottom: 1px solid blue;
+}
